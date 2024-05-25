@@ -23,6 +23,9 @@ public class Vertex<V> {
     public Map<Vertex<V>, Double> getAdjacentVertices(){
         return map;
     }
+    public Iterable<V> getAdjacentVerticesData(){
+        return map.keySet().stream().map(Vertex::getData)::iterator;
+    }
 
     @Override
     public boolean equals(Object obj) {
