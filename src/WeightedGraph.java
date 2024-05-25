@@ -47,4 +47,7 @@ public class WeightedGraph<V> {
     public Iterable<V> getVertices(){
         return map.keySet();
     }
+    public Iterable<V> getAdjacentVertices(V data){
+        return map.keySet();
+    }
 }
